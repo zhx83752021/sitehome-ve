@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SupperAI 作品展示 — 每个项目从零开始，没有模板，拒绝平庸">
+    <meta name="theme-color" content="#0B0B0F">
+    <meta property="og:title" content="SupperAI Works — 作品展示">
+    <meta property="og:description" content="做了些网站，还算能看。每个项目从零开始。">
+    <meta property="og:type" content="website">
+    <title>SupperAI Works — 作品展示</title>
+
+    <!-- 字体加载：Syne (展示) + Manrope (正文) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 噪点纹理叠加层 -->
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- ======== 顶部导航 ======== -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo" aria-label="SupperAI 首页">
+                <span class="logo-mark" aria-hidden="true">S</span>
+                <span class="logo-text">SupperAI</span>
+            </a>
+            <nav class="header-nav" aria-label="站点信息">
+                <span class="nav-label">作品集</span>
+                <span class="nav-dot" aria-hidden="true"></span>
+                <span class="nav-count" id="projectCount">06</span>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ======== Hero Banner ======== -->
+    <section class="hero" aria-label="页面标题">
+        <!-- 粒子动画画布 -->
+        <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+        <!-- 装饰光斑 -->
+        <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb--3" aria-hidden="true"></div>
+        <div class="hero-inner">
+            <h1 class="hero-title">
+                <span class="hero-line">每个像素</span>
+                <span class="hero-line hero-line--accent">都有态度</span>
+            </h1>
+            <p class="hero-desc">不套模板，不将就，从第一行代码写到最后一帧动画</p>
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+            <span>往下翻</span>
+            <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 1v16M1 12l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ======== 作品网格 ======== -->
+    <main class="works-section">
+        <div class="works-grid" id="worksGrid">
+            <!-- 由 script.js 动态渲染 -->
+        </div>
+    </main>
+
+    <!-- ======== 页脚 ======== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-text">SupperAI Works</div>
+                <div class="footer-subtitle">每个像素，都有态度。</div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 SupperAI Studio</p>
+                <p style="margin-top: 4px; font-size: 12px; color: #555;">不套模板，拒绝平庸。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
