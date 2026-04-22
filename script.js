@@ -24,7 +24,7 @@ const PROJECTS = [
         descLine2: '晒萌宠、找同好、聊养护',
     },
     {
-        name: '企业门户',
+        name: '综合门户',
         url: 'https://portal.supperai.top/',
         screenshot: 'assets/portal.png',
         tag: '门户',
