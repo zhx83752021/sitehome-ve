@@ -28,8 +28,8 @@ const PROJECTS = [
         url: 'https://portal.supperai.top/',
         screenshot: 'assets/portal.png',
         tag: '门户',
-        desc: '正经企业该有的样子',
-        descLine2: '品牌展示、新闻动态一站搞定',
+        desc: '拒绝刻板，重塑品牌温度',
+        descLine2: '动态叙事，全端自适应响应',
     },
     {
         name: '在线商城',
